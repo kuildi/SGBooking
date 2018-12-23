@@ -3,8 +3,83 @@
     padding: 0;
 }
 
+h1,h2,h3,h4,h5,h6 {
+    user-select: none;
+}
+
+.mg-bot-0 {
+    margin-bottom: 0 !important;
+}
+
+.skew > * {
+    -webkit-transform: skewX(15deg); 
+	-moz-transform: skewX(15deg); 
+	-ms-transform: skewX(15deg); 
+	-o-transform: skewX(15deg); 
+	transform: skewX(15deg);
+}
+
+.skew {
+	-webkit-transform: skewX(-15deg); 
+	-moz-transform: skewX(-15deg); 
+	-ms-transform: skewX(-15deg); 
+	-o-transform: skewX(-15deg); 
+	transform: skewX(-15deg); 
+}
+
 .header_sticky {
     position: sticky;
     top: 0;
     z-index: 999;
+}
+
+nav li {
+    width: 50px;
+    transition: all .4s !important;
+    transform-origin: top;
+}
+
+nav li:hover {
+    width: 100px;
+    background-color: rgba(0,0,0,0.1);
+}
+
+nav li a {
+    visibility: hidden;
+}
+
+nav li:hover a {
+    visibility: visible;
+}
+
+nav ul a:hover {
+    background-color: unset;
+}
+
+#football {
+    background-color: greenyellow;
+}
+
+#basketball {
+    background-color: chocolate;
+}
+
+#tenis {
+    background-color: forestgreen;
+}
+
+#vacancy {
+    background-color: teal;
+}
+
+#main {
+    background-color: rgb(47, 73, 139);
+}
+
+#about {
+    background-color: tomato;
+}
+
+#contacts {
+    background-color: slateblue;
 }

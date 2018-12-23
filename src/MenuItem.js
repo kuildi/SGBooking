@@ -4,7 +4,9 @@ import PropTypes from 'prop-types';
 export default class MenuItem extends React.Component {
 	render() {
 		return (
-			<li><a target="_blank" href={this.props.href}>{this.props.children}</a></li>
+			<li className="skew" id={this.props.id}>
+				<a target="_blank" href={this.props.href}>{this.props.children}</a>
+			</li>
 		);
 	}
 }

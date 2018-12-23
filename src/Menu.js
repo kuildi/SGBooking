@@ -5,12 +5,11 @@ export default class Menu extends React.Component {
 	render() {
 
 		let items = this.props.items.map((item, index) => {
-			return <MenuItem key={index} href={item.href}>{item.title}</MenuItem>
+			return <MenuItem key={index} href={item.href} id={item.id} icon={item.icon}>{item.title}</MenuItem>
 		});
 
 		return (
 			<div>
-				<h1>{this.props.titleMenu}</h1>
 				<ul>
 					{items}
 				</ul>

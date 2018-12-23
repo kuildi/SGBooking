@@ -10,7 +10,7 @@ class App extends React.Component {
 
 		return <div className="center">
 			<Navbar></Navbar>
-			<h3 className="teal-text">Найди свое поле у нас</h3>
+			<h3 className="white-text">Найди свое поле у нас</h3>
 			<Article></Article>
 			<Footer></Footer>
 		</div>
