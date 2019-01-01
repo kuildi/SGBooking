@@ -1,20 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Article from './Article';
-import Button from './Button';
-import Footer from './Footer';
-import Navbar from './Navbar';
 
-class App extends React.Component {
-	render() {
+import { Router, Route, IndexRoute, browserHistory, hashHistory } from 'react-router';
 
-		return <div className="center">
-			<Navbar></Navbar>
-			<h3 className="white-text">Найди свое поле у нас</h3>
-			<Article></Article>
-			<Footer></Footer>
-		</div>
-	}
-}
+import Layout from './Layouts/Layout';
+import Main from './Pages/Main';
+import Football from './Pages/Football';
+import Basketball from './Pages/Basketball';
+// import SignUp from './Pages/SignUp';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const app = document.getElementById('root');
+
+
+ReactDOM.render(
+	<Router history={browserHistory}>
+		<Route path="/" component={Layout}>
+			<IndexRoute component={Main} />
+			<Route path="/football" component={Football}></Route>
+			<Route path="/basketball" component={Basketball}></Route>
+		</Route>
+	</Router>,
+	app);
