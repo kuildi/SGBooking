@@ -5,14 +5,19 @@ import Button from './Button';
 export default class ArticleText extends React.Component {
 	render() {
 		let items = this.props.items.map((item, index) => {
-			return <div key={index} className="card hoverable">
-			<div className="card-content">
-				<span className="card-title">{item.header}</span>
-				<p>{item.text}</p>
-			</div>
-			<div className="card-action">
-                <Button></Button>
-			</div>
+			return <div key={index} className="col m3">
+				<div className="card hoverable">
+					{/* <div className="card-image">
+						<img src={require('../img/1.jpg')} />
+					</div> */}
+					<div className="card-content">
+						<span className="card-title">{item.header}</span>
+						<p>{item.text}</p>
+					</div>
+					<div className="card-action">
+						<Button></Button>
+					</div>
+				</div>
 			</div>
 		});
 
@@ -23,7 +28,7 @@ export default class ArticleText extends React.Component {
 		);
 	}
 }
-{/* <ArticleItem key={index}>{item.header}{item.text}</ArticleItem> */}
+{/* <ArticleItem key={index}>{item.header}{item.text}</ArticleItem> */ }
 // ArticleItem.defaultProps = {
 // 	children: "Главная (страница по умолчанию)",
 // 	href: "/"

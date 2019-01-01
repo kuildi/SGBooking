@@ -16,8 +16,8 @@ ReactDOM.render(
 	<Router history={browserHistory}>
 		<Route path="/" component={Layout}>
 			<IndexRoute component={Main} />
-			<Route path="/football" component={Football}></Route>
-			<Route path="/basketball" component={Basketball}></Route>
+			<Route path="football" component={Football}></Route>
+			<Route path="basketball" component={Basketball}></Route>
 		</Route>
 	</Router>,
 	app);

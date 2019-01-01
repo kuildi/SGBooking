@@ -16,7 +16,7 @@ export default class Article extends React.Component {
 
         return (
             <div className="row">
-            <div className="col m6 push-m3">
+            <div className="col m12">
                 <ArticleText items={articleItems}></ArticleText>
             </div>
             </div>

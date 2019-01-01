@@ -3,7 +3,12 @@
     padding: 0;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     user-select: none;
 }
 
@@ -11,20 +16,20 @@ h1,h2,h3,h4,h5,h6 {
     margin-bottom: 0 !important;
 }
 
-.skew > * {
-    -webkit-transform: skewX(15deg); 
-	-moz-transform: skewX(15deg); 
-	-ms-transform: skewX(15deg); 
-	-o-transform: skewX(15deg); 
-	transform: skewX(15deg);
+.skew>* {
+    -webkit-transform: skewX(15deg);
+    -moz-transform: skewX(15deg);
+    -ms-transform: skewX(15deg);
+    -o-transform: skewX(15deg);
+    transform: skewX(15deg);
 }
 
 .skew {
-	-webkit-transform: skewX(-15deg); 
-	-moz-transform: skewX(-15deg); 
-	-ms-transform: skewX(-15deg); 
-	-o-transform: skewX(-15deg); 
-	transform: skewX(-15deg); 
+    -webkit-transform: skewX(-15deg);
+    -moz-transform: skewX(-15deg);
+    -ms-transform: skewX(-15deg);
+    -o-transform: skewX(-15deg);
+    transform: skewX(-15deg);
 }
 
 .header_sticky {
@@ -41,7 +46,15 @@ nav li {
 
 nav li:hover {
     width: 100px;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.active {
+    width: 100px;
+}
+
+.active a {
+    visibility: visible;
 }
 
 nav li a {
@@ -82,4 +95,46 @@ nav ul a:hover {
 
 #contacts {
     background-color: slateblue;
+}
+
+.card-content {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 200px;
+}
+
+.cut_section_right {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e570e7+0,c85ec7+47,994393+100 */
+    background: rgb(229, 112, 231);
+    /* Old browsers */
+    background: -moz-linear-gradient(45deg, rgba(229, 112, 231, 1) 0%, rgba(200, 94, 199, 1) 47%, rgba(153, 67, 147, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, rgba(229, 112, 231, 1) 0%, rgba(200, 94, 199, 1) 47%, rgba(153, 67, 147, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, rgba(229, 112, 231, 1) 0%, rgba(200, 94, 199, 1) 47%, rgba(153, 67, 147, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e570e7', endColorstr='#994393', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+
+    clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
+}
+
+.cut_section_left {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e570e7+0,c85ec7+47,994393+100 */
+    background: rgb(229, 112, 231);
+    /* Old browsers */
+    background: -moz-linear-gradient(45deg, rgba(229, 112, 231, 1) 0%, rgba(200, 94, 199, 1) 47%, rgba(153, 67, 147, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, rgba(229, 112, 231, 1) 0%, rgba(200, 94, 199, 1) 47%, rgba(153, 67, 147, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, rgba(229, 112, 231, 1) 0%, rgba(200, 94, 199, 1) 47%, rgba(153, 67, 147, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e570e7', endColorstr='#994393', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    
+    clip-path: polygon(0 0, 1600px 0, 1600px 100%, 0 87%);
+}
+
+.pad-bot-sm {
+    padding-bottom: 20px !important;
 }

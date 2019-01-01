@@ -5,7 +5,7 @@ import {Link} from 'react-router';
 export default class MenuItem extends React.Component {
 	render() {
 		return (
-			<li className="skew" id={this.props.id}>
+			<li className={this.props.active ? 'active skew' : 'skew'} id={this.props.id}>
 				<Link to={this.props.href}>{this.props.children}</Link>
 			</li>
 		);
