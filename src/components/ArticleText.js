@@ -8,7 +8,7 @@ export default class ArticleText extends React.Component {
 			return <div key={index} className="col m3">
 				<div className="card hoverable">
 					{/* <div className="card-image">
-						<img src={require('../img/1.jpg')} />
+						<img src={'../img/1.jpg'} />
 					</div> */}
 					<div className="card-content">
 						<span className="card-title">{item.header}</span>
