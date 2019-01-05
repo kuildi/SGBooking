@@ -146,3 +146,37 @@ nav ul a:hover {
     opacity: 0;
     transition: all .4s;
 }
+
+.card {
+    position: relative !important;
+}
+
+.card-content {
+    position: absolute !important;
+    top: 0;
+    opacity: 0;
+    /* height: 0; */
+    padding: 10px !important;
+}
+
+.card:hover .card-content {
+    animation: card-text 0.5s forwards;
+}
+
+@keyframes card-text {
+    0% {
+        left: -200px;
+        opacity: 0;
+    }
+
+    50% {
+        left: 10px;
+        opacity: 0.5;
+    }
+
+    100% {
+        left: 0px;
+        opacity: 1;
+        padding: 10px;
+    }
+}

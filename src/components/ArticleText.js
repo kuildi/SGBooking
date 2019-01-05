@@ -5,17 +5,14 @@ import Button from './Button';
 export default class ArticleText extends React.Component {
 	render() {
 		let items = this.props.items.map((item, index) => {
-			return <div key={index} className="col m3">
+			return <div key={index} className="col s6 m4 l4 xl3">
 				<div className="card hoverable">
-					{/* <div className="card-image">
-						<img src={'../img/1.jpg'} />
-					</div> */}
-					<div className="card-content">
+					<div className="card-image">
+						<img src={'https://via.placeholder.com/300/5c6bc0/fff?text=Заглушечка'} />
 						<span className="card-title">{item.header}</span>
-						<p>{item.text}</p>
 					</div>
-					<div className="card-action">
-						<Button></Button>
+					<div className="card-content white-text">
+						<p>{item.text}</p>
 					</div>
 				</div>
 			</div>

@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    user-select: none;
+}
+
+body {
+    position: relative;
+    z-index: 0;
+}
+
+.mg-bot-0 {
+    margin-bottom: 0 !important;
+}
+
+.skew {
+    >* {
+        -webkit-transform: skewX(15deg);
+        -moz-transform: skewX(15deg);
+        -ms-transform: skewX(15deg);
+        -o-transform: skewX(15deg);
+        transform: skewX(15deg);
+    }
+
+    -webkit-transform: skewX(-15deg);
+    -moz-transform: skewX(-15deg);
+    -ms-transform: skewX(-15deg);
+    -o-transform: skewX(-15deg);
+    transform: skewX(-15deg);
+}
+
+.header_sticky {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+nav li {
+    width: 50px;
+    transition: all .4s !important;
+    transform-origin: top;
+
+    &:hover {
+        width: 100px;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+}
+
+.active {
+    width: 100px;
+
+    a {
+        visibility: visible;
+    }
+}
+
+nav {
+    li {
+        a {
+            visibility: hidden;
+        }
+
+        &:hover a {
+            visibility: visible;
+        }
+    }
+
+    ul a:hover {
+        background-color: unset;
+    }
+}
+
+#football {
+    background-color: greenyellow;
+}
+
+#basketball {
+    background-color: chocolate;
+}
+
+#tenis {
+    background-color: forestgreen;
+}
+
+#vacancy {
+    background-color: teal;
+}
+
+#main {
+    background-color: rgb(47, 73, 139);
+}
+
+#about {
+    background-color: tomato;
+}
+
+#contacts {
+    background-color: slateblue;
+}
+
+.card-content {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 200px;
+}
+
+.cut_section_right {
+    padding: 30px 0 !important;
+    clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
+}
+
+.cut_section_left {
+    padding: 30px 0 !important;
+    clip-path: polygon(0 0, 1600px 0, 1600px 100%, 0 87%);
+}
+
+.pad-bot-sm {
+    padding-bottom: 20px !important;
+}
+
+.login_block {
+    position: absolute;
+    right: 0;
+
+    li {
+        width: auto;
+
+        &:hover {
+            width: auto;
+        }
+    }
+
+    a {
+        visibility: visible;
+    }
+}
+
+.dropdown-menu {
+    position: absolute;
+    right: 0;
+    z-index: -10;
+    opacity: 0;
+    transition: all .4s;
+}
+
+.card {
+    position: relative !important;
+}
+
+.card-content {
+    position: absolute !important;
+    top: 0;
+    opacity: 0;
+    /* height: 0; */
+    padding: 10px !important;
+}
+
+.card:hover .card-content {
+    animation: card-text 0.7s forwards;
+}
+
+@keyframes card-text {
+    0% {
+        top: -200px;
+        opacity: 0;
+    }
+
+    50% {
+        top: 10px;
+        opacity: 0.5;
+    }
+
+    100% {
+        top: 0px;
+        opacity: 1;
+        padding: 10px;
+    }
+}
