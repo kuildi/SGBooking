@@ -1,23 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Link} from 'react-router';
+import {NavLink} from 'react-router-dom';
 
 export default class MenuItem extends React.Component {
 	render() {
 		return (
-			<li className={this.props.active ? 'active skew' : 'skew'} id={this.props.id}>
-				<Link to={this.props.href}>{this.props.children}</Link>
+			<li className='skew' id={this.props.id}>
+				<NavLink to={this.props.href} activeClassName="active">{this.props.children}</NavLink>
 			</li>
 		);
 	}
 }
 
-MenuItem.defaultProps = {
-	children: "Главная (страница по умолчанию)",
-	href: "/"
-};
+// MenuItem.defaultProps = {
+// 	children: "Главная (страница по умолчанию)",
+// 	href: "/"
+// };
 
-MenuItem.propTypes = {
-	children: PropTypes.number.isRequired,
-	href: PropTypes.string.isRequired
-}
+// MenuItem.propTypes = {
+// 	children: PropTypes.number.isRequired,
+// 	href: PropTypes.string.isRequired
+// }

@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import '../node_modules/materialize-css/dist/js/materialize';
 import './Styles/style.scss';
 
-import { Router, Route, IndexRoute, browserHistory, hashHistory } from 'react-router';
-
+// import { Router, Route, IndexRoute, browserHistory, hashHistory } from 'react-router';
+import { HashRouter as Router, Route} from "react-router-dom";
 import Layout from './Layouts/Layout';
 import Main from './Pages/Main';
 import Football from './Pages/Football';
@@ -17,16 +18,14 @@ const app = document.getElementById('root');
 
 
 ReactDOM.render(
-	<Router history={hashHistory}>
-		<Route path="/" component={Layout}>
-			<IndexRoute component={Main} />
-			<Route path="football" component={Football}>
-				<Route path=":postId" component={Post}/>
-			</Route>
-			<Route path="basketball" component={Basketball}></Route>
-			<Route path="contacts" component={Contacts}></Route>
-			<Route path="cricket" component={Cricket}></Route>
-			<Route path="tennis" component={Tennis}></Route>
-		</Route>
+	<Router>
+		<Layout>
+			<Route exact path='/' component={Main} />
+			<Route path="/football" component={Football}></Route>
+			<Route path="/basketball" component={Basketball}></Route>
+			<Route path="/contacts" component={Contacts}></Route>
+			<Route path="/cricket" component={Cricket}></Route>
+			<Route path="/tennis" component={Tennis}></Route>
+		</Layout>
 	</Router>,
 	app);

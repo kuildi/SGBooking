@@ -17,8 +17,8 @@ export default class Navbar extends React.Component {
                     <Menu items={menuItems}></Menu>
                     <ul className="login_block right">
                         <li><a href="#">Войти</a></li>
-                        <li className='dropdown-menu'><a href="#">Зарегистрироваться</a></li>
-                        <li className='dropdown-menu'><a href="#">лОолл</a></li>
+                        {/* <li className='dropdown-menu'><a href="#">Зарегистрироваться</a></li>
+                        <li className='dropdown-menu'><a href="#">лОолл</a></li> */}
                     </ul>
                 </div>
             </nav>
