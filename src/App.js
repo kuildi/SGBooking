@@ -4,7 +4,7 @@ import '../node_modules/materialize-css/dist/js/materialize';
 import './Styles/style.scss';
 
 // import { Router, Route, IndexRoute, browserHistory, hashHistory } from 'react-router';
-import { HashRouter as Router, Route} from "react-router-dom";
+import { HashRouter as Router, Route } from "react-router-dom";
 import Layout from './Layouts/Layout';
 import Main from './Pages/Main';
 import Football from './Pages/Football';
@@ -12,7 +12,6 @@ import Basketball from './Pages/Basketball';
 import Cricket from './Pages/Cricket';
 import Contacts from './Pages/Contacts';
 import Tennis from './Pages/Tennis';
-import Post from './Pages/Post';
 
 const app = document.getElementById('root');
 

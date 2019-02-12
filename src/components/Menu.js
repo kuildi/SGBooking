@@ -10,11 +10,11 @@ export default class Menu extends React.Component {
 		});
 
 		return (
-			<div>
+			<>
 				<ul>
 					{items}
 				</ul>
-			</div>
+			</>
 		);
 	}
 }

@@ -3,6 +3,13 @@
     padding: 0;
 }
 
+a {
+    color: #fff;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
 h1,
 h2,
 h3,
@@ -171,6 +178,10 @@ nav {
 // Карточки
 .card {
     position: relative !important;
+
+    &:hover .card-content {
+        animation: card-text 0.7s forwards;
+    }
 }
 
 .card-content {
@@ -178,10 +189,6 @@ nav {
     top: 0;
     opacity: 0;
     padding: 10px !important;
-}
-
-.card:hover .card-content {
-    animation: card-text 0.7s forwards;
 }
 
 @keyframes card-text {
@@ -202,4 +209,14 @@ nav {
     }
 }
 
+.main-content {
+    z-index: 999;
+    background-color: #fff;
+}
+
+.footer_sticky {
+    position: sticky;
+    bottom: 0;
+    z-index: -10;
+}
 // //Карточки

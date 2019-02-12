@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import {NavLink} from 'react-router-dom';
 
 export default class MenuItem extends React.Component {
@@ -11,13 +10,3 @@ export default class MenuItem extends React.Component {
 		);
 	}
 }
-
-// MenuItem.defaultProps = {
-// 	children: "Главная (страница по умолчанию)",
-// 	href: "/"
-// };
-
-// MenuItem.propTypes = {
-// 	children: PropTypes.number.isRequired,
-// 	href: PropTypes.string.isRequired
-// }

@@ -6,7 +6,6 @@ import Footer from '../components/Footer';
 export default class Layout extends React.Component {
     constructor(props) {
         super(props);
-        this.brand = 'React blog!';
     }
 
     isActive(href) {
@@ -15,15 +14,15 @@ export default class Layout extends React.Component {
 
     render() {
         return (
-            <div>
+            <>
                 <Navbar></Navbar>
-                <div className="row">
+                <div className="row main-content">
                     <div className="col-12">
                         {this.props.children}
                     </div>
                 </div>
                 <Footer></Footer>
-            </div>
+            </>
         );
     }
 }
