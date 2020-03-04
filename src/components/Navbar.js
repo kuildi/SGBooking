@@ -12,16 +12,16 @@ export default class Navbar extends React.Component {
             { id: "contacts", href: "/contacts", title: "Контакты" }
         ];
         return (
-            <nav className="amber darken-1 header_sticky">
-                <div className="nav-wrapper">
-                    <Menu items={menuItems}></Menu>
-                    <ul className="login_block right">
-                        <li><a href="#">Войти</a></li>
-                        {/* <li className='dropdown-menu'><a href="#">Зарегистрироваться</a></li>
-                        <li className='dropdown-menu'><a href="#">лОолл</a></li> */}
-                    </ul>
-                </div>
-            </nav>
+            <header className="header_sticky amber darken-1">
+                <nav>
+                    <div className="nav-wrapper">
+                        <Menu items={menuItems}></Menu>
+                        <ul className="login_block right">
+                            <li><a href="#">Войти</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
         );
     }
 }

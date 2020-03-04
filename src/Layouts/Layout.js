@@ -8,19 +8,17 @@ export default class Layout extends React.Component {
         super(props);
     }
 
-    isActive(href) {
-        return window.location.pathname === href;
-    }
+    // isActive(href) {
+    //     return window.location.pathname === href;
+    // }
 
     render() {
         return (
             <>
                 <Navbar></Navbar>
-                <div className="row main-content">
-                    <div className="col-12">
-                        {this.props.children}
-                    </div>
-                </div>
+                <main className="row main-content">
+                    {this.props.children}
+                </main>
                 <Footer></Footer>
             </>
         );

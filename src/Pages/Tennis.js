@@ -13,10 +13,10 @@ export default class Tennis extends React.Component {
         ];
 
         return (
-            <div className="row center">
+            <article className="row center">
                 <h1>Tennis posts</h1>
                 <Posts items={tennisData} />
-            </div>
+            </article>
         );
     }
 }

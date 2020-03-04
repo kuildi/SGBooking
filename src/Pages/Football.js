@@ -15,10 +15,10 @@ export default class Football extends React.Component {
         ];
 
         return (
-            <div className="row center">
+            <article className="row center">
                 <h1>Football posts</h1>
                 <Posts items={articleItems}/>
-            </div>
+            </article>
         );
     }
 }

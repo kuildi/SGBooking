@@ -5,7 +5,7 @@ export default class Contacts extends React.Component {
     render() {
 
         return (
-            <div className="row center">
+            <article className="row center">
                 <h1>Contacts</h1>
                 <div className="col s12 m6 offset-m3">
                     <div className="card-panel blue lighten-1 white-text left-align">
@@ -21,7 +21,7 @@ export default class Contacts extends React.Component {
                         </ol>
                     </div>
                 </div>
-            </div>
+            </article>
         );
     }
 }

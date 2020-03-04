@@ -18,10 +18,10 @@ export default class Cricket extends React.Component {
         ];
 
         return (
-            <div className="row center">
+            <article className="row center">
                 <h1>Cricket posts</h1>
                 <Posts items={cricketData} />
-            </div>
+            </article>
         );
     }
 }

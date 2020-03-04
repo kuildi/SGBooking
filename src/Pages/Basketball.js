@@ -12,10 +12,10 @@ export default class Basketball extends React.Component {
         ];
 
         return (
-            <div className="row center">
+            <article className="row center">
                 <h1>Basketball posts</h1>
                 <Posts items={basketballData} />
-            </div>
+            </article>
         );
     }
 }
