@@ -4,7 +4,9 @@ export default class Button extends React.Component {
     
     render() {
         return (
-            <div className="btn waves-effect">Кнопка</div>
+            <button className={"btn " + this.props.class}>
+                {this.props.textBtn}
+            </button>
         );
     }
 }
