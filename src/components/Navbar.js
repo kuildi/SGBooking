@@ -9,7 +9,8 @@ export default class Navbar extends React.Component {
             { id: "basketball", href: "/basketball", title: "Баскетбол" },
             { id: "tenis", href: "/tennis", title: "Теннис" },
             { id: "vacancy", href: "/cricket", title: "Крикет" },
-            { id: "contacts", href: "/contacts", title: "Контакты" }
+            { id: "contacts", href: "/contacts", title: "Контакты" },
+            { id: "gallery", href: "/gallery", title: "Галлерея" }
         ];
         return (
             <header className="header_sticky amber darken-1">

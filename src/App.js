@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import '../node_modules/materialize-css/dist/js/materialize';
 import './Styles/style.scss';
+import './Styles/grids.scss';
 
 // import { Router, Route, IndexRoute, browserHistory, hashHistory } from 'react-router';
 import { HashRouter as Router, Route } from "react-router-dom";
@@ -12,6 +13,7 @@ import Basketball from './Pages/Basketball';
 import Cricket from './Pages/Cricket';
 import Contacts from './Pages/Contacts';
 import Tennis from './Pages/Tennis';
+import Gallery from './Pages/Gallery';
 
 const app = document.getElementById('root');
 
@@ -25,6 +27,7 @@ ReactDOM.render(
 			<Route path="/contacts" component={Contacts}></Route>
 			<Route path="/cricket" component={Cricket}></Route>
 			<Route path="/tennis" component={Tennis}></Route>
+			<Route path="/gallery" component={Gallery}></Route>
 		</Layout>
 	</Router>,
 	app);
