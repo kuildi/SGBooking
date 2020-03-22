@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import '../node_modules/materialize-css/dist/js/materialize';
 import './Styles/style.scss';
 import './Styles/grids.scss';
+import './Styles/cards.scss';
 
 // import { Router, Route, IndexRoute, browserHistory, hashHistory } from 'react-router';
 import { HashRouter as Router, Route } from "react-router-dom";

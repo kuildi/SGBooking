@@ -1,3 +1,6 @@
+$primary-color: rgba(88, 88, 255, 0.842);
+$danger-color: rgb(250, 64, 64);
+
 $football_color: #64dd17;
 $basketball_color: #e65100;
 $tenis_color: #93ff17e8;
@@ -125,12 +128,6 @@ nav {
     background-color: coral;
 }
 
-.card-content {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-height: 200px;
-}
-
 .section_cut-right {
     padding: 30px 0 !important;
     clip-path: $cut_down_right;
@@ -179,44 +176,6 @@ nav {
 
 // //Блок логина
 
-// Карточки
-.card {
-    width: 100%;
-    height: 100%;
-    min-height: 100px;
-    position: relative !important;
-    background-color: teal;
-
-    &:hover .card-content {
-        animation: card-text 0.7s forwards;
-    }
-}
-
-.card-content {
-    position: absolute !important;
-    top: 0;
-    opacity: 0;
-    padding: 10px !important;
-}
-
-@keyframes card-text {
-    0% {
-        top: -200px;
-        opacity: 0;
-    }
-
-    50% {
-        top: 10px;
-        opacity: 0.5;
-    }
-
-    100% {
-        top: 0px;
-        opacity: 1;
-        padding: 10px;
-    }
-}
-
 .main-content {
     z-index: 999;
     background-color: #fff;
@@ -227,4 +186,11 @@ nav {
     bottom: 0;
     z-index: -10;
 }
-// //Карточки
+
+.btn {
+    text-transform: unset;
+}
+
+.btn_primary-color {
+    background-color: $primary-color;
+}

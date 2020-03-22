@@ -1,15 +1,21 @@
 import React from 'react';
+import Button from './Button';
 
 export default class Card extends React.Component {
     render() {
         return (
-            <div className={this.props.class}>
-                <div className="card hoverable">
-                    <div className="card-content white-text left-align">
-                        <p>{this.props.text}</p>
-                    </div>
+            <aside className={"card hoverable " + this.props.class}>
+                {/* <section className="card__cover"></section> */}
+                <header className="card__header">
+                    <h5>{this.props.header}</h5>
+                </header>
+                <div className="card__content white-text">
+                    <p>{this.props.text}</p>
                 </div>
-            </div>
+                <footer className="card__footer">
+                    <Button textBtn="See more" class="btn_primary-color" />
+                </footer>
+            </aside>
         );
     }
 }

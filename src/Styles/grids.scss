@@ -1,22 +1,27 @@
+%grid-container {
+   display: grid;
+   grid-gap: 10px;
+   padding: 10px;
+   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+   grid-auto-rows: auto;
+}
+
 .grid-container {
-    display: grid;
+   @extend %grid-container;
 }
 
 .grid-container_masonry {
-    display: grid;
-    grid-gap: 10px;
-    padding: 10px;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-auto-rows: 200px;
+   @extend %grid-container;
+   grid-auto-rows: 200px;
 
-    .photo {
-        grid-row-end: span 2;
-     }
-     .event {
-        grid-row-end: span 3;
-     }
-     .post {
-        grid-row-end: span 1;
-     }
+   .photo {
+      grid-row-end: span 2;
+   }
+   .event {
+      grid-row-end: span 3;
+   }
+   .post {
+      grid-row-end: span 1;
+   }
 }
 
